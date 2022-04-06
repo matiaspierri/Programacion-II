@@ -1,0 +1,11 @@
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\bin\Debug\Clase 4.exe.config
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\bin\Debug\Clase 4.exe
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\bin\Debug\Clase 4.pdb
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.csproj.AssemblyReference.cache
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.csproj.SuggestedBindingRedirects.cache
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase_4.Form1.resources
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase_4.Properties.Resources.resources
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.csproj.GenerateResource.cache
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.exe
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.pdb
