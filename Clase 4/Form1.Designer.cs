@@ -33,6 +33,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.AddChildButton = new System.Windows.Forms.Button();
+            this.GoButton = new System.Windows.Forms.Button();
+            this.UrlTextBox = new System.Windows.Forms.TextBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // toolTip2
@@ -65,11 +68,40 @@
             this.AddChildButton.UseVisualStyleBackColor = true;
             this.AddChildButton.Click += new System.EventHandler(this.button2_Click);
             // 
+            // GoButton
+            // 
+            this.GoButton.Location = new System.Drawing.Point(682, 52);
+            this.GoButton.Name = "GoButton";
+            this.GoButton.Size = new System.Drawing.Size(83, 27);
+            this.GoButton.TabIndex = 3;
+            this.GoButton.Text = "Ir a la pagina";
+            this.GoButton.UseVisualStyleBackColor = true;
+            this.GoButton.Click += new System.EventHandler(this.GoButton_Click);
+
+            // 
+            // UrlTextBox
+            // 
+            this.UrlTextBox.Location = new System.Drawing.Point(437, 56);
+            this.UrlTextBox.Name = "UrlTextBox";
+            this.UrlTextBox.Size = new System.Drawing.Size(239, 20);
+            this.UrlTextBox.TabIndex = 4;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(437, 82);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(328, 250);
+            this.webBrowser1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.UrlTextBox);
+            this.Controls.Add(this.GoButton);
             this.Controls.Add(this.AddChildButton);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.button1);
@@ -77,6 +109,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -85,6 +118,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Button AddChildButton;
+        private System.Windows.Forms.Button GoButton;
+        private System.Windows.Forms.TextBox UrlTextBox;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 

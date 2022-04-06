@@ -58,5 +58,35 @@ namespace Clase_4
             treeView1.Nodes[0].Nodes.Add("hijo");
             this.treeView1.EndUpdate();
         }
+
+
+        private void GoButton_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(UrlTextBox.Text) || UrlTextBox.Text.Equals("about:blank"))
+            {
+                MessageBox.Show("Enter a valid URL.");
+                UrlTextBox.Focus();
+                return;
+            }
+            OpenURLInBrowser(UrlTextBox.Text);
+        }
+
+        private void OpenURLInBrowser(string url)
+        {
+
+            if (!url.StartsWith("http://") && !url.StartsWith("https://"))
+            {
+                url = "http://" + url;
+            }
+
+            try
+            {
+                webBrowser1.Navigate(new Uri(url));
+            }
+            catch (System.UriFormatException)
+            {
+                return;
+            }
+        }
     }
 }
