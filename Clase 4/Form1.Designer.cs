@@ -38,6 +38,7 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.GoToForm2 = new System.Windows.Forms.Button();
             this.GoToFBD = new System.Windows.Forms.Button();
+            this.ButtonOD = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // toolTip2
@@ -116,11 +117,22 @@
             this.GoToFBD.UseVisualStyleBackColor = true;
             this.GoToFBD.Click += new System.EventHandler(this.GoToFBD_Click);
             // 
+            // ButtonOD
+            // 
+            this.ButtonOD.Location = new System.Drawing.Point(319, 344);
+            this.ButtonOD.Name = "ButtonOD";
+            this.ButtonOD.Size = new System.Drawing.Size(103, 23);
+            this.ButtonOD.TabIndex = 8;
+            this.ButtonOD.Text = "Ver Open Dialog";
+            this.ButtonOD.UseVisualStyleBackColor = true;
+            this.ButtonOD.Click += new System.EventHandler(this.ButtonOD_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ButtonOD);
             this.Controls.Add(this.GoToFBD);
             this.Controls.Add(this.GoToForm2);
             this.Controls.Add(this.webBrowser1);
@@ -147,6 +159,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button GoToForm2;
         private System.Windows.Forms.Button GoToFBD;
+        private System.Windows.Forms.Button ButtonOD;
     }
 }
 
