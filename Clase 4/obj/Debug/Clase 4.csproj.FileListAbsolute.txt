@@ -10,3 +10,4 @@ C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.csproj.CoreCo
 C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.exe
 C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase 4.pdb
 C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase_4.Form2.resources
+C:\Users\usuario\Desktop\Programacion-II\Clase 4\obj\Debug\Clase_4.Form3.resources

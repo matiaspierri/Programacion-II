@@ -96,5 +96,14 @@ namespace Clase_4
             Form2 f = new Form2();
             f.Show();
         }
+
+        private void GoToFBD_Click(object sender, EventArgs e)
+        {
+
+            FolderBrowserDialogExampleForm FormFBD = new FolderBrowserDialogExampleForm();
+
+            FormFBD.Show();
+
+        }
     }
 }

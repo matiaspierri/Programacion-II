@@ -37,6 +37,7 @@
             this.UrlTextBox = new System.Windows.Forms.TextBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.GoToForm2 = new System.Windows.Forms.Button();
+            this.GoToFBD = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // toolTip2
@@ -105,11 +106,22 @@
             this.GoToForm2.UseVisualStyleBackColor = false;
             this.GoToForm2.Click += new System.EventHandler(this.GoToForm2_Click);
             // 
+            // GoToFBD
+            // 
+            this.GoToFBD.Location = new System.Drawing.Point(219, 344);
+            this.GoToFBD.Name = "GoToFBD";
+            this.GoToFBD.Size = new System.Drawing.Size(75, 23);
+            this.GoToFBD.TabIndex = 7;
+            this.GoToFBD.Text = "Ver File Browser";
+            this.GoToFBD.UseVisualStyleBackColor = true;
+            this.GoToFBD.Click += new System.EventHandler(this.GoToFBD_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.GoToFBD);
             this.Controls.Add(this.GoToForm2);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.UrlTextBox);
@@ -134,6 +146,7 @@
         private System.Windows.Forms.TextBox UrlTextBox;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button GoToForm2;
+        private System.Windows.Forms.Button GoToFBD;
     }
 }
 

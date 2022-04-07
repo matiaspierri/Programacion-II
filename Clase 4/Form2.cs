@@ -33,5 +33,12 @@ namespace Clase_4
         {
             
         }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+
     }
 }
