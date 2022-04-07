@@ -88,5 +88,13 @@ namespace Clase_4
                 return;
             }
         }
+
+        private void GoToForm2_Click(object sender, EventArgs e)
+        {
+            // Instancio el form de clase form2 para seguir
+            // con los ejercicios
+            Form2 f = new Form2();
+            f.Show();
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.GoButton = new System.Windows.Forms.Button();
             this.UrlTextBox = new System.Windows.Forms.TextBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.GoToForm2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // toolTip2
@@ -77,7 +78,6 @@
             this.GoButton.Text = "Ir a la pagina";
             this.GoButton.UseVisualStyleBackColor = true;
             this.GoButton.Click += new System.EventHandler(this.GoButton_Click);
-
             // 
             // UrlTextBox
             // 
@@ -94,11 +94,23 @@
             this.webBrowser1.Size = new System.Drawing.Size(328, 250);
             this.webBrowser1.TabIndex = 5;
             // 
+            // GoToForm2
+            // 
+            this.GoToForm2.BackColor = System.Drawing.SystemColors.Info;
+            this.GoToForm2.Location = new System.Drawing.Point(48, 344);
+            this.GoToForm2.Name = "GoToForm2";
+            this.GoToForm2.Size = new System.Drawing.Size(144, 23);
+            this.GoToForm2.TabIndex = 6;
+            this.GoToForm2.Text = "Ver segunda parte";
+            this.GoToForm2.UseVisualStyleBackColor = false;
+            this.GoToForm2.Click += new System.EventHandler(this.GoToForm2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.GoToForm2);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.UrlTextBox);
             this.Controls.Add(this.GoButton);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Button GoButton;
         private System.Windows.Forms.TextBox UrlTextBox;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Button GoToForm2;
     }
 }
 
