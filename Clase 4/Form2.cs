@@ -15,11 +15,23 @@ namespace Clase_4
         public Form2()
         {
             InitializeComponent();
+        
+            this.IsMdiContainer = true;
+
+            this.MainMenu.Dock = DockStyle.Left;
+
+
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void asdasdToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
