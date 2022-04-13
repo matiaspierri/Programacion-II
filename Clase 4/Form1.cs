@@ -139,7 +139,74 @@ namespace Clase_4
             MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
         }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Stream myStream;
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if ((myStream = saveFileDialog1.OpenFile()) != null)
+                {
+                    // Code to write the stream goes here.
+                    myStream.Close();
+                }
+            }
+        }
 
 
+        // Declare the PrintDocument object.
+        private System.Drawing.Printing.PrintDocument docToPrint =
+            new System.Drawing.Printing.PrintDocument();
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Allow the user to choose the page range he or she would
+            // like to print.
+            PrintDialog1.AllowSomePages = true;
+
+            // Show the help button.
+            PrintDialog1.ShowHelp = true;
+
+            // Set the Document property to the PrintDocument for 
+            // which the PrintPage Event has been handled. To display the
+            // dialog, either this property or the PrinterSettings property 
+            // must be set 
+            PrintDialog1.Document = docToPrint;
+
+            DialogResult result = PrintDialog1.ShowDialog();
+
+            // If the result is OK then print the document.
+            if (result == DialogResult.OK)
+            {
+                docToPrint.Print();
+            }
+
+
+        }
+
+        // The PrintDialog will print the document
+        // by handling the document's PrintPage event.
+        private void document_PrintPage(object sender,
+            System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+            // Insert code to render the page here.
+            // This code will be called when the control is drawn.
+
+            // The following code will render a simple
+            // message on the printed document.
+            string text = "In document_PrintPage method.";
+            System.Drawing.Font printFont = new System.Drawing.Font
+                ("Arial", 35, System.Drawing.FontStyle.Regular);
+
+            // Draw the content.
+            e.Graphics.DrawString(text, printFont,
+                System.Drawing.Brushes.Black, 10, 10);
+        }
     }
 }
