@@ -78,7 +78,7 @@ namespace BancoModelo
                 }
             }
 
-            public 
+            // public abstract bool Extraccion(decimal importe); 
         }
 
         public class CA: Cuenta
