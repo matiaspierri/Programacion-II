@@ -9,3 +9,14 @@ C:\Users\usuario\Programacion-II\Clase3\obj\Debug\Clase3.csproj.GenerateResource
 C:\Users\usuario\Programacion-II\Clase3\obj\Debug\Clase3.csproj.CoreCompileInputs.cache
 C:\Users\usuario\Programacion-II\Clase3\obj\Debug\Clase3.exe
 C:\Users\usuario\Programacion-II\Clase3\obj\Debug\Clase3.pdb
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\bin\Debug\Clase3.exe.config
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\bin\Debug\Clase3.exe
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\bin\Debug\Clase3.pdb
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.csproj.AssemblyReference.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.csproj.SuggestedBindingRedirects.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.Form1.resources
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.Properties.Resources.resources
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.csproj.GenerateResource.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.csproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.exe
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Clase3\obj\Debug\Clase3.pdb
