@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BancoModelo
 {
-    internal class Banco
+    public class Banco
     {
+
     }
 }
