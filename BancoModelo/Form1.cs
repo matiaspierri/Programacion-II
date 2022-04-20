@@ -12,9 +12,12 @@ namespace BancoModelo
 {
     public partial class Form1 : Form
     {
+        Banco banco;
         public Form1()
         {
             InitializeComponent();
+
+            banco = new Banco();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -22,12 +25,10 @@ namespace BancoModelo
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-        
-
-        
-
-
+            banco.AgregarTitular();
+        }
     }
 }

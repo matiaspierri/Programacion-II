@@ -74,4 +74,10 @@ namespace BancoModelo
             }
         }
     }
+
+    public enum ID
+    {
+        DNI,
+        CI
+    }
 }
