@@ -8,6 +8,13 @@ namespace BancoModelo
 {
     public abstract class Cuenta
     {
+        public Cuenta(Cuenta cuenta)
+        {
+            Numero = cuenta.Numero;
+            Saldo = cuenta.Saldo;
+            Titular = cuenta.Titular;
+        }
+
         public string Numero { get; set; }
         public decimal Saldo { get; set; }
 
@@ -32,12 +39,21 @@ namespace BancoModelo
 
     public class CA : Cuenta
     {
-
+        public CA(Cuenta cuenta) : base(cuenta);
+        public override bool Extraccion(decimal importe)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class CC : Cuenta
     {
+        public CC(Cuenta cuenta) : base(cuenta);
 
+        public override bool Extraccion(decimal importe)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }
