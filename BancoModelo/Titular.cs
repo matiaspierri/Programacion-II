@@ -25,6 +25,12 @@ namespace BancoModelo
         {
             try
             {
+                Cuenta aux; 
+                
+                if(cuenta is CA) { aux = new CA(); }
+                else { aux = new CC(); }
+               
+
                 ListaCuentas.Add(cuenta);
             }
             catch (Exception ex)
