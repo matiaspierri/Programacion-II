@@ -40,8 +40,13 @@ namespace BancoModelo
                                                   x.NroDocumento == titular.NroDocumento);
             if (auxTitular == null) throw new Exception("No se encontro el titular");
 
+            foreach (Cuenta C in auxTitular.RetiraCuentas)
+            {
+                listaCuenta.Remove(listaCuenta.Find(x => x.Numero == C.Numero ));
+            }
 
-            foreach (Cuenta C in titular) ;
+            listaTitular.Remove(auxTitular);
         }
+        
     }
 }
