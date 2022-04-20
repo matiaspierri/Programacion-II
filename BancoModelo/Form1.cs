@@ -30,7 +30,7 @@ namespace BancoModelo
         public class Titular
         {
 
-            List<Cuenta> listaCuentas; 
+            List<Cuenta> ListaCuentas; 
 
             public Titular() { ListaCuentas = new List<Cuenta>(); }
 
@@ -41,12 +41,12 @@ namespace BancoModelo
             public string Nombre { get; set; }  
             public string Apellido { get; set; }
 
-            public List<Cuenta> RetiraCuentas { get { return listaCuentas; } }
+            public List<Cuenta> RetiraCuentas { get { return ListaCuentas; } }
             public void CargaCuenta(Cuenta cuenta)
             {
                 try
                 {
-                    listaCuentas.Add(cuenta);
+                    ListaCuentas.Add(cuenta);
                 }
                 catch (Exception ex)
                 {
@@ -58,10 +58,10 @@ namespace BancoModelo
 
         public abstract class Cuenta
         {
-            public string Numero { get; set; }  
+            public string Numero { get; set; }
             public decimal Saldo { get; set; }
 
-            public Titular titular { get; set; }
+            public Titular Titular { get; set; }
 
 
             public void Depositar(decimal importe)
@@ -71,19 +71,18 @@ namespace BancoModelo
                     if (importe < 0) throw new Exception("Monto negativo ");
                     Saldo += importe;
                 }
-                catch (Exception ex )
+                catch (Exception ex)
                 {
 
-                    throw ex ;
+                    throw ex;
                 }
             }
-
-            // public abstract bool Extraccion(decimal importe); 
+            public abstract bool Extraccion(decimal importe); 
         }
 
         public class CA: Cuenta
         {
-
+            
         }
 
         public class CC: Cuenta
