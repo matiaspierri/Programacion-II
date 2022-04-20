@@ -47,6 +47,18 @@ namespace BancoModelo
 
             listaTitular.Remove(auxTitular);
         }
+           
+        public List<Titular> RetornaTitulares()
+        {
+            List<Titular> ret = new List<Titular>();
+
+            foreach (Titular titular in listaTitular)
+            {
+                ret.Add(new Titular(titular));
+            }
+
+            return ret;
+        }
         
     }
 }
