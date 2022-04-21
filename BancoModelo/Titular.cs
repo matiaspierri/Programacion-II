@@ -25,7 +25,17 @@ namespace BancoModelo
             ListaCuentas = titular.RetiraCuentas;
         }
 
-        public string TipoDocumento { get; set; }
+
+        public Titular(ID TipoDocumento, string NroDocumento,
+                        string Nombre, string Apellido) : this()
+        {
+            this.TipoDocumento = TipoDocumento;
+            this.NroDocumento = NroDocumento;
+            this.Nombre = Nombre;
+            this.Apellido = Apellido;
+        }
+
+        public ID TipoDocumento { get; set; }
         public string NroDocumento { get; set; }
 
         public string Nombre { get; set; }

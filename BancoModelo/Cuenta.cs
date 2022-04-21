@@ -39,7 +39,7 @@ namespace BancoModelo
 
     public class CA : Cuenta
     {
-        public CA(Cuenta cuenta) : base(cuenta);
+        public CA(Cuenta cuenta) : base(cuenta) { }
         public override bool Extraccion(decimal importe)
         {
             throw new NotImplementedException();
@@ -48,7 +48,7 @@ namespace BancoModelo
 
     public class CC : Cuenta
     {
-        public CC(Cuenta cuenta) : base(cuenta);
+        public CC(Cuenta cuenta) : base(cuenta) { }
 
         public override bool Extraccion(decimal importe)
         {
