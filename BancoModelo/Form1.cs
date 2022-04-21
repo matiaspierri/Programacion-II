@@ -37,9 +37,19 @@ namespace BancoModelo
             string nombre = Interaction.InputBox("Ingrese el nombre");
             string apellido = Interaction.InputBox("Ingrese el apellido");
 
+            Titular titular = new Titular(id, nroDocumento, nombre, apellido);  
 
 
-            banco.AgregarTitular();
+            banco.AgregarTitular(titular);
+
+            Mostrar(dataGridView1, banco.RetornaTitulares());
         }
+
+        private void Mostrar(DataGridView datagridview, Object obj)
+        {
+            datagridview.DataSource = null; datagridview.DataSource = obj; 
+
+        }
+        
     }
 }

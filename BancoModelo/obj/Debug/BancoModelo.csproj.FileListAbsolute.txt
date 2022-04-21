@@ -1,0 +1,11 @@
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.csproj.AssemblyReference.cache
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.csproj.SuggestedBindingRedirects.cache
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.Form1.resources
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.Properties.Resources.resources
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.csproj.GenerateResource.cache
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Programacion-II\BancoModelo\bin\Debug\BancoModelo.exe.config
+C:\Users\usuario\Programacion-II\BancoModelo\bin\Debug\BancoModelo.exe
+C:\Users\usuario\Programacion-II\BancoModelo\bin\Debug\BancoModelo.pdb
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.exe
+C:\Users\usuario\Programacion-II\BancoModelo\obj\Debug\BancoModelo.pdb
