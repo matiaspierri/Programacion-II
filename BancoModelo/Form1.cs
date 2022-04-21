@@ -45,11 +45,60 @@ namespace BancoModelo
             Mostrar(dataGridView1, banco.RetornaTitulares());
         }
 
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows.Count == 0) throw new Exception("No hay nada parar borrar");
+                banco.BorrarTitular(dataGridView1.SelectedRows[0].DataBoundItem as Titular);
+
+                Mostrar(dataGridView1, banco.RetornaTitulares());
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows.Count == 0) throw new Exception("No hay nada para modificar");
+                
+                Titular titular = dataGridView1.SelectedRows[0].DataBoundItem as Titular ;
+                ID tdOrigen = titular.TipoDocumento;
+                string nroOirgen = titular.NroDocumento;
+
+
+                ID id = (ID)int.Parse(Interaction.InputBox($"Ingrese el tipo de documento{Environment.NewLine}" +
+                                                    $"DNI = 0{Environment.NewLine}" +
+                                                    $"CI = 1", "Modificando ...",((int)tdOrigen).ToString()));
+
+                string nroDocumento = Interaction.InputBox("Ingrese el numero de documento");
+                string nombre = Interaction.InputBox("Ingrese el nombre");
+                string apellido = Interaction.InputBox("Ingrese el apellido");
+
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void Mostrar(DataGridView datagridview, Object obj)
         {
-            datagridview.DataSource = null; datagridview.DataSource = obj; 
+            datagridview.DataSource = null; 
+            datagridview.DataSource = obj; 
 
         }
-        
     }
 }
