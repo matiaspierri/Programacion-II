@@ -1,0 +1,11 @@
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.csproj.AssemblyReference.cache
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.csproj.SuggestedBindingRedirects.cache
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.Form1.resources
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.Properties.Resources.resources
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.csproj.GenerateResource.cache
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Programacion-II\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Users\usuario\Programacion-II\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Users\usuario\Programacion-II\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Users\usuario\Programacion-II\Ejercicio1\obj\Debug\Ejercicio1.pdb

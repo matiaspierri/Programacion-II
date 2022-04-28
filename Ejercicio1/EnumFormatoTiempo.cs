@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1
 {
-    internal class Class2
+    public enum EnumFormatoTiempo
     {
+        formatoAnio,
+        formatoMes,
+        formatoDia
     }
 }
