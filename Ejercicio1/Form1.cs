@@ -67,14 +67,31 @@ namespace Ejercicio1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Alumno alumno = dataGridView1.SelectedRows[0].DataBoundItem as Alumno;
+
+            alumno.MateriasDesaprobadas();
 
         }
-       
+
 
         private void Mostrar(DataGridView datagridview, object obj)
         {
             datagridview.DataSource = null;
             datagridview.DataSource = obj;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Alumno alumno = dataGridView1.SelectedRows[0].DataBoundItem as Alumno;
+
+            alumno.CantidadMateriasAprobadas += 1;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Alumno alumno = dataGridView1.SelectedRows[0].DataBoundItem as Alumno;
+
+            alumno.EdadIngreso();
         }
     }
 }
