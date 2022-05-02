@@ -40,6 +40,8 @@ namespace Ejercicio1
 
             
             MessageBox.Show("Alumno creado");
+
+            Mostrar(dataGridView1, alumnoList);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -50,6 +52,29 @@ namespace Ejercicio1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Alumno alumnoSeleccionado = dataGridView1.SelectedRows[0].DataBoundItem as Alumno;
+
+            EnumFormatoTiempo formato = (EnumFormatoTiempo)Int32.Parse(Interaction.InputBox("0.En anios 1. En meses 2. en dias"));
+
+
+            alumnoSeleccionado.GetAntiguedad(formato);
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+       
+
+        private void Mostrar(DataGridView datagridview, object obj)
+        {
+            datagridview.DataSource = null;
+            datagridview.DataSource = obj;
         }
     }
 }
