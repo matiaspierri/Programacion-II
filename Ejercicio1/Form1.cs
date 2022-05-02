@@ -16,9 +16,13 @@ namespace Ejercicio1
 {
     public partial class Form1 : Form
     {
+        List<Alumno> alumnoList = new List<Alumno>();
         public Form1()
         {
             InitializeComponent();
+
+            dataGridView1.MultiSelect = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,12 +31,24 @@ namespace Ejercicio1
             string Nombre = Interaction.InputBox("Nombre");
             string Apellido = Interaction.InputBox("Apellido");
             int Edad = int.Parse(Interaction.InputBox("Edad"));
-            DateTime FechaNacimiento = DateTime.Parse(Interaction.InputBox("Coloque fecha de nacimiento en formato dd/mm/yyyy"));
-            DateTime FechaIngreso = DateTime.Parse(Interaction.InputBox("Coloque fecha de ingreso en formato dd/mm/yyyy"));
+            DateTime FechaNacimiento = DateTime.Parse(Interaction.InputBox("Coloque fecha de nacimiento en formato mm/dd/yyyy"));
+            DateTime FechaIngreso = DateTime.Parse(Interaction.InputBox("Coloque fecha de ingreso en formato mm/dd/yyyy"));
 
-            MessageBox.Show(DateAndTime.DateDiff(DateInterval.Year, FechaNacimiento, FechaIngreso).ToString());
+            Alumno alumno = new Alumno(Legajo,Nombre,Apellido,Edad,FechaNacimiento,FechaIngreso);
 
-            MessageBox.Show(Legajo.ToString());
+            alumnoList.Add(alumno);
+
+            
+            MessageBox.Show("Alumno creado");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
