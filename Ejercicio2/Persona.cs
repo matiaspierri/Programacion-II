@@ -14,6 +14,9 @@ namespace Ejercicio2
 
         public string Apellido { get; set; }
 
+        
+
+
         public Persona(string DNI, string Nombre, string Apellido)
         {
             this.DNI = DNI;
