@@ -30,9 +30,14 @@ namespace Ejercicio1
             DateTime FechaNacimiento = DateTime.Parse(Interaction.InputBox("Coloque fecha de nacimiento en formato dd/mm/yyyy"));
             DateTime FechaIngreso = DateTime.Parse(Interaction.InputBox("Coloque fecha de ingreso en formato dd/mm/yyyy"));
 
-            MessageBox.Show(DateAndTime.DateDiff(DateInterval.Year, FechaNacimiento, FechaIngreso).ToString());
+            //MessageBox.Show(DateAndTime.DateDiff(DateInterval.Year, FechaNacimiento, FechaIngreso).ToString());
 
-            MessageBox.Show(Legajo.ToString());
+            //MessageBox.Show(Legajo.ToString());
+
+            Alumno alumno = new Alumno(Legajo,Nombre,Apellido,Edad,FechaNacimiento,FechaIngreso);
+
+
+
 
         }
     }
