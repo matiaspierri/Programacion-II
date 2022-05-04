@@ -6,7 +6,29 @@ using System.Threading.Tasks;
 
 namespace Ejercicio2
 {
-    internal class Class1
+    public class Persona
     {
+
+        public string DNI { get; set; }
+        public string Nombre { get; set; }
+
+        public string Apellido { get; set; }
+
+        public Persona(string DNI, string Nombre, string Apellido)
+        {
+            this.DNI = DNI;
+            this.Nombre = Nombre;
+            this.Apellido = Apellido;
+        }
+
+        public List<Auto> GetAutos()
+        {
+
+        }
+        
+        public int CountAutos()
+        {
+
+        }
     }
 }
