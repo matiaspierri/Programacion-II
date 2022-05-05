@@ -24,14 +24,14 @@ namespace Ejercicio2
             this.Apellido = Apellido;
         }
 
-        public List<Auto> GetAutos()
+        public List<Auto> GetAutos(List<Auto> autos)
         {
-
+            throw new NotImplementedException();    
         }
         
-        public int CountAutos()
+        public int CountAutos(List<Auto> autos)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
