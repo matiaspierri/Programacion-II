@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Microsoft.VisualBasic;
+
+using System.Windows.Forms;
 namespace Ejercicio1
 {
     public class Alumno
@@ -15,6 +18,8 @@ namespace Ejercicio1
         public int Edad { get; }
 
         public bool Activo { set; get; }
+        
+        public int CantidadMaterias { set; get; }
 
         public Alumno() { }
 
@@ -31,6 +36,7 @@ namespace Ejercicio1
             this.FechaNacimiento = FechaNacimiento;
             this.FechaIngreso = FechaIngreso;
             this.CantidadMateriasAprobadas = CantidadMateriasAprobadas;
+            this.CantidadMaterias = CantidadMaterias;
         }
 
 
@@ -58,14 +64,45 @@ namespace Ejercicio1
         }
 
 
-        public int GetAntiguedad(EnumFormatoTiempo formatoTiempo)
+        public void GetAntiguedad(EnumFormatoTiempo formatoTiempo)
         {
-            TimeSpan _antiguedad = DateTime.Now - this.FechaIngreso;
+            long tiempo;
+            
+            if(formatoTiempo == EnumFormatoTiempo.formatoDia)
+            {
+                tiempo = DateAndTime.DateDiff(DateInterval.Day, this.FechaIngreso, DateTime.Now);
+                MessageBox.Show($"La antiguedad es {tiempo} dias");
 
-            return _antiguedad.Days;
+            }
+            else if(formatoTiempo == EnumFormatoTiempo.formatoMes)
+            {
+                tiempo = DateAndTime.DateDiff(DateInterval.Month, this.FechaIngreso, DateTime.Now);
+                MessageBox.Show($"La antiguedad es {tiempo} meses");
+
+            }
+            else
+            {
+                tiempo = DateAndTime.DateDiff(DateInterval.Year, this.FechaIngreso, DateTime.Now);
+                MessageBox.Show($"La antiguedad es {tiempo} anio");
+
+
+            }
+
+
+
         }
 
-        // public int GetMateriasNoAprobadas() { }
+        public void MateriasDesaprobadas() 
+        {
+            MessageBox.Show($"Cantidad de materias desaprobadas{this.CantidadMaterias - this.CantidadMateriasAprobadas}");
+        }
+
+        public void EdadIngreso()
+        {
+            MessageBox.Show($"Edad: {DateAndTime.DateDiff(DateInterval.Year,this.FechaNacimiento,this.FechaIngreso)}");
+
+        }
+
 
         // public int GetEdadIngreso() { }
 
