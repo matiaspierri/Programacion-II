@@ -1,0 +1,11 @@
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\bin\Debug\Ejercicio-Interfaces-I.exe.config
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\bin\Debug\Ejercicio-Interfaces-I.exe
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\bin\Debug\Ejercicio-Interfaces-I.pdb
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio-Interfaces-I.csproj.AssemblyReference.cache
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio-Interfaces-I.csproj.SuggestedBindingRedirects.cache
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio_Interfaces_I.Form1.resources
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio_Interfaces_I.Properties.Resources.resources
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio-Interfaces-I.csproj.GenerateResource.cache
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio-Interfaces-I.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio-Interfaces-I.exe
+C:\Users\usuario\Programacion-II\Ejercicio-Interfaces-I\obj\Debug\Ejercicio-Interfaces-I.pdb
