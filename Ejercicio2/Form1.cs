@@ -74,10 +74,28 @@ namespace Ejercicio2
             Persona persona = dataGridView1.SelectedRows[0].DataBoundItem as Persona;
 
             List<Auto> autosPersona = autoList.FindAll(auto => auto.Persona.DNI == persona.DNI);
+            var autos = (from auto in autosPersona select new { patente = auto.Patente, propietario = $"{auto.Persona.Nombre}  {auto.Persona.Apellido}" }).ToList();
 
-            Mostrar(dataGridView3, autosPersona);
+
+            Mostrar(dataGridView3, autos);
 
            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Persona persona = dataGridView1.SelectedRows[0].DataBoundItem as Persona;
+
+            personaList.Remove(persona);
+            persona = null;
+
+            Mostrar(dataGridView1, personaList);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Auto auto = dataGridView1.SelectedRows[0].DataBoundItem as Auto;
+            Mostrar(dataGridView4, auto);
         }
     }
 }
