@@ -21,6 +21,15 @@ namespace Ejercicio2
 
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.dataGridView2.MultiSelect = false;
+            this.dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.dataGridView3.MultiSelect = false;
+            this.dataGridView3.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            this.dataGridView4.MultiSelect = false;
+            this.dataGridView4.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -66,6 +75,16 @@ namespace Ejercicio2
 
             Mostrar(dataGridView2, autoList);
 
+            var autos = (from a in autoList select new{ 
+                Marca= a.Marca,
+                Año= a.Anio,
+                Modelo= a.Modelo,
+                Patente= a.Patente,
+                DNI_del_dueño= a.Persona.DNI,
+                Apellido_Nombre = $"{a.Persona.Nombre} {a.Persona.Apellido}" 
+            }).ToList();
+
+            Mostrar(dataGridView4, autos);
            
         }
 
@@ -96,6 +115,49 @@ namespace Ejercicio2
         {
             Auto auto = dataGridView1.SelectedRows[0].DataBoundItem as Auto;
             Mostrar(dataGridView4, auto);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Persona persona = dataGridView1.SelectedRows[0].DataBoundItem as Persona;
+
+            persona.Nombre = Interaction.InputBox("Nombre:", "nombre", persona.Nombre);
+            persona.DNI = Interaction.InputBox("DNI:", "nombre", persona.DNI);
+            persona.Apellido = Interaction.InputBox("Apellido:", "nombre", persona.Apellido);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Persona persona = dataGridView1.SelectedRows[0].DataBoundItem as Persona;
+
+            personaList.Remove(persona);
+            persona = null;
+
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            Persona persona = dataGridView1.SelectedRows[0].DataBoundItem as Persona;
+            Auto auto = dataGridView2.SelectedRows[0].DataBoundItem as Auto;
+
+            auto.Persona = persona;
+
+
+            // Refresco el datagridview 4 porque se queda desactualizado
+            var autos = (from a in autoList
+                         select new
+                         {
+                             Marca = a.Marca,
+                             Año = a.Anio,
+                             Modelo = a.Modelo,
+                             Patente = a.Patente,
+                             DNI_del_dueño = a.Persona.DNI,
+                             Apellido_Nombre = $"{a.Persona.Nombre} {a.Persona.Apellido}"
+                         }).ToList();
+
+            Mostrar(dataGridView4, autos);
+
         }
     }
 }
