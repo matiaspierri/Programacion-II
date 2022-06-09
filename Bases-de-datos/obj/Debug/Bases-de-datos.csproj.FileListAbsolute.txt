@@ -1,0 +1,11 @@
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases-de-datos.csproj.AssemblyReference.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases-de-datos.csproj.SuggestedBindingRedirects.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases_de_datos.Form1.resources
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases_de_datos.Properties.Resources.resources
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases-de-datos.csproj.GenerateResource.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases-de-datos.csproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\bin\Debug\Bases-de-datos.exe.config
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\bin\Debug\Bases-de-datos.exe
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\bin\Debug\Bases-de-datos.pdb
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases-de-datos.exe
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\Bases-de-datos\obj\Debug\Bases-de-datos.pdb

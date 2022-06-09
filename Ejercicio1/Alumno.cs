@@ -39,20 +39,22 @@ namespace Ejercicio1
             this.CantidadMaterias = CantidadMaterias;
         }
 
+        ~Alumno()
+        {
+            MessageBox.Show($"{this.Legajo} {this.Nombre} {this.Apellido}");
+        }
 
 
 
         private DateTime _fechasNacimiento;  // the name field
         public DateTime FechaNacimiento    // the Name property
         {
-            get => _fechasNacimiento;
             set => _fechasNacimiento = value;
         }
 
         private DateTime _fechasIngreso;  // the name field
         public DateTime FechaIngreso    // the Name property
         {
-            get => _fechasIngreso;
             set => _fechasIngreso = value;
         }
 
@@ -70,19 +72,19 @@ namespace Ejercicio1
             
             if(formatoTiempo == EnumFormatoTiempo.formatoDia)
             {
-                tiempo = DateAndTime.DateDiff(DateInterval.Day, this.FechaIngreso, DateTime.Now);
+                tiempo = DateAndTime.DateDiff(DateInterval.Day, this.GetFechaIngreso(), DateTime.Now);
                 MessageBox.Show($"La antiguedad es {tiempo} dias");
 
             }
             else if(formatoTiempo == EnumFormatoTiempo.formatoMes)
             {
-                tiempo = DateAndTime.DateDiff(DateInterval.Month, this.FechaIngreso, DateTime.Now);
+                tiempo = DateAndTime.DateDiff(DateInterval.Month, this.GetFechaIngreso(), DateTime.Now);
                 MessageBox.Show($"La antiguedad es {tiempo} meses");
 
             }
             else
             {
-                tiempo = DateAndTime.DateDiff(DateInterval.Year, this.FechaIngreso, DateTime.Now);
+                tiempo = DateAndTime.DateDiff(DateInterval.Year, this.GetFechaIngreso(), DateTime.Now);
                 MessageBox.Show($"La antiguedad es {tiempo} anio");
 
 
@@ -99,8 +101,13 @@ namespace Ejercicio1
 
         public void EdadIngreso()
         {
-            MessageBox.Show($"Edad: {DateAndTime.DateDiff(DateInterval.Year,this.FechaNacimiento,this.FechaIngreso)}");
+            MessageBox.Show($"Edad: {DateAndTime.DateDiff(DateInterval.Year,this._fechasNacimiento, this._fechasIngreso)}");
 
+        }
+
+        public DateTime GetFechaIngreso()
+        {
+            return this._fechasIngreso;
         }
 
 

@@ -159,5 +159,10 @@ namespace Ejercicio2
             Mostrar(dataGridView4, autos);
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

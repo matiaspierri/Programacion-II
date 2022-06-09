@@ -1,0 +1,11 @@
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.csproj.AssemblyReference.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.csproj.SuggestedBindingRedirects.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.Form1.resources
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.Properties.Resources.resources
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.csproj.GenerateResource.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.csproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\bin\Debug\EventosPractica.exe.config
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\bin\Debug\EventosPractica.exe
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\bin\Debug\EventosPractica.pdb
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.exe
+C:\Users\matia\OneDrive\Escritorio\UCEMA\Programacion-II\EventosPractica\obj\Debug\EventosPractica.pdb

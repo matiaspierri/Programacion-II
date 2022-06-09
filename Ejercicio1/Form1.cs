@@ -46,6 +46,8 @@ namespace Ejercicio1
             
             MessageBox.Show("Alumno creado");
 
+            alumnoList.Add(alumno);
+
             Mostrar(dataGridView1, alumnoList);
         }
 
@@ -97,6 +99,16 @@ namespace Ejercicio1
             Alumno alumno = dataGridView1.SelectedRows[0].DataBoundItem as Alumno;
 
             alumno.EdadIngreso();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Alumno alumno = dataGridView1.SelectedRows[0].DataBoundItem as Alumno;
+
+            alumno.Apellido = Interaction.InputBox("Apellido", "modi", alumno.Apellido);
+            alumno.Nombre = Interaction.InputBox("Apellido", "modi", alumno.Nombre);
+
+            alumno.Legajo = int.Parse((Interaction.InputBox("Apellido", "modi", $"{alumno.Legajo}"));
         }
     }
 }
